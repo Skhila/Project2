@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Swoop Functionality Test Using POM Pattern and Data Driven Testing Method" parallel="tests">
+    <test name="Regression1 Tests">
+        <groups>
+            <run>
+                <include name="Regression1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests.SwoopTest"/>
+        </classes>
+    </test>
+
+    <test name="Regression2 Tests">
+        <groups>
+            <run>
+                <include name="Regression2"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests.SwoopTest"/>
+        </classes>
+    </test>
+</suite>
+
